@@ -21,3 +21,8 @@
 
 1. #### Clone or download the repository.
 2. #### Run docker services: `docker-compose -f docker/local/docker-compose.yaml up -d`
+
+# 🌄 Demonstration
+
+#### menus/dishes/
+![firefox_Ar7V1CbYCk](https://github.com/FCTL3314/Django-Tree-Menu/assets/97694131/1edfb860-f5a2-4d56-b54e-bc114b033a3c)
