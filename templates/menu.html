@@ -1,6 +1,6 @@
 {% load menu %}
 
-<details class="nested-menu">
+<details class="nested-menu" {% if not metadata.is_target_menu_reached %} open {% endif %}>
 
   <summary>
     <a class="{% if is_active %} active {% endif %}" href="{{ menu.get_absolute_url }}">
@@ -9,6 +9,6 @@
   </summary>
 
   {% for child in children %}
-    {% draw_menu child request %}
+    {% draw_menu child request metadata %}
   {% endfor %}
 </details>

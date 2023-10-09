@@ -22,3 +22,9 @@ class Menu(models.Model):
 
     def get_absolute_url(self):
         return reverse("menus:menu-detail", kwargs={"slug": self.slug})
+
+    def get_first_parent(self):
+        menu = self
+        while menu.parent is not None:
+            menu = menu.parent
+        return menu
