@@ -9,6 +9,9 @@ register = template.Library()
 
 @register.simple_tag
 def draw_menu(menu: Menu, request: WSGIRequest) -> str:
+    """
+    Draws the menu and all his children.
+    """
     context = {
         "menu": menu,
         "children": menu.children.all(),
