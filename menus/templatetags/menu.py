@@ -26,8 +26,7 @@ def draw_menu(
     if metadata.is_first:
         menu = menu.get_first_parent()
         metadata.is_first = False
-    is_active = request.path == menu.get_absolute_url()
-    if is_active:
+    if is_active := request.path == menu.get_absolute_url():
         metadata.is_target_menu_reached = True
     context = {
         "menu": menu,
