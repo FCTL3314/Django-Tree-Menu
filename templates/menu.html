@@ -1,0 +1,14 @@
+{% load menu %}
+
+<details class="nested-menu">
+
+  <summary>
+    <a class="{{ active_class }}" href="{{ menu.get_absolute_url }}">
+      {{ menu.name }}
+    </a>
+  </summary>
+
+  {% for child in children %}
+    {% draw_menu child request %}
+  {% endfor %}
+</details>

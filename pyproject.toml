@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "django-tree-menu"
+version = "0.1.0"
+description = ""
+authors = ["Nikita Solouyou <solovev.nikita.05@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_tree_menu"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.6"
+django-debug-toolbar = "^4.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+ruff = "^0.0.292"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

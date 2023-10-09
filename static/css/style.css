@@ -1,0 +1,7 @@
+.nested-menu:not(:first-child) {
+    margin-left: 15px
+}
+
+.active {
+    font-weight: bold;
+}
