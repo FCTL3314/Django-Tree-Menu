@@ -3,7 +3,7 @@
 <details class="nested-menu">
 
   <summary>
-    <a class="{{ active_class }}" href="{{ menu.get_absolute_url }}">
+    <a class="{% if is_active %} active {% endif %}" href="{{ menu.get_absolute_url }}">
       {{ menu.name }}
     </a>
   </summary>

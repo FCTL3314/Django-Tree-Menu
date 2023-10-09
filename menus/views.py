@@ -4,5 +4,5 @@ from menus.models import Menu
 
 
 class MenuDetailView(DetailView):
-    queryset = Menu.objects.all()
+    queryset = Menu.objects.select_related("parent")
     template_name = "index.html"

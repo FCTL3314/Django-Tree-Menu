@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["Nikita Solouyou <solovev.nikita.05@gmail.com>"]
 readme = "README.md"
-packages = [{include = "django_tree_menu"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
